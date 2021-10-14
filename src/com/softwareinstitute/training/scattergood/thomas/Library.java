@@ -1,0 +1,16 @@
+package com.softwareinstitute.training.scattergood.thomas;
+
+public abstract class Library {
+
+    ////////////////////////////////Attributes/////////////////////////
+
+    private String name;
+
+    ///////////////////////////////Constructors////////////////////////
+    public Library(String name){
+    this.name = name;
+    }
+
+    ///////////////////////////////Methods/////////////////////////////
+
+}
