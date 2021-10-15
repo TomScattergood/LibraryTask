@@ -5,49 +5,43 @@ public class LibraryContents {
     //////////////////////////Attributes////////////////////////
 
     private String Title;
-    private String creator;
-    private boolean borrowable;
     private int releaseYear;
+    private String Genre;
+    //private boolean borrow;
 
 
 
     /////////////////////////Constructors///////////////////////
 
-    public void Library(String Title, String creator, int releaseYear, boolean borrowable) {
+    public LibraryContents(String Title, int releaseYear, String Genre) {//boolean Borrow) {
         this.Title = Title;
-        this.creator = creator;
         this.releaseYear = releaseYear;
-        this.borrowable = borrowable;
+        this.Genre = Genre;
+        //this.borrow = borrow;
     }
 
     ////////////////////////Methods/////////////////////////////
 
-    public String getTitle(){
-        return Title;
-    }
-
-    public void setTitle(){
-        this.Title = Title;
-    }
-
-    public String getCreator(){
-        return creator;
-    }
-
-    public void setCreator(){
-        this.creator = creator;
-    }
-
+    public String getTitle(){return Title;}
+    public void setTitle(){this.Title = Title;}
     public void title (String title){
-        System.out.println("The title of the book is " + title );
+        System.out.println("The title of the item is " + title );
     }
 
-    public void creator (String creator){
-        System.out.println("The creator of the item is " + creator);
+
+    public int getReleaseYear(){return releaseYear;}
+    public void setReleaseYear(){this.releaseYear=releaseYear;}
+    public void ReleaseYear (int releaseYear) {
+        System.out.println("The release year of the item is " + releaseYear);
     }
 
-    public void borrow(boolean borrowable){
-        System.out.println("This book is " + borrowable);
+    public String getGenre(){return Genre;}
+    public void setGenre(){this.Genre=Genre;}
+    public void Genre (String Genre) {
+        System.out.println("The genre of the item is " + Genre);
     }
+    // public Boolean get (boolean borrowable){
+      //  System.out.println("This book is " + borrowable);
+    //}
 
 }

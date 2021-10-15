@@ -1,41 +1,43 @@
 package com.softwareinstitute.training.scattergood.thomas;
 
-public  class Book extends LibraryContents {
+public class Book extends LibraryContents {
 
     //////////////////////////Attributes////////////////////////
-    private int PageCount;
+
     private String Author;
-
-
+    private int PageCount;
 
     /////////////////////////Constructors///////////////////////
 
-    public Book(int pageCount, String author, String Title) {
-        PageCount = pageCount;
-        Author = author;
-        Title = Title;
-
+    public Book(String Title, int releaseYear, String Genre, String author, int PageCount) {
+        super(Title, releaseYear, Genre);
+        this.Author = author;
+        this.PageCount = PageCount;
+    }
 
     ////////////////////////Methods/////////////////////////////
 
-    public String getAuthor(){
+    public String getAuthor() {
         return Author;
-        }
-
-        public void setAuthor(String Author){
-            this.Author=Author;
-
-
-
-    public author (String Author){
-        System.out.println("The author of the book is " + Author);
     }
 
-    public int getPageCount(){
+    public void setAuthor() {
+        this.Author = Author;
+    }
+
+    public void Author(String Author) {
+        System.out.println("The author of this book is " + Author);
+    }
+
+    public int getPageCount() {
         return PageCount;
     }
 
-    public void setPageCount(){
+    public void setPageCount() {
         this.PageCount = PageCount;
+    }
+
+    public void PageCount(int pageCount) {
+        System.out.println("The page count of this book is " + PageCount);
     }
 }
