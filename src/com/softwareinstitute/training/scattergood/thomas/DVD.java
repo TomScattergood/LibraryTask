@@ -1,23 +1,21 @@
- package com.softwareinstitute.training.scattergood.thomas;
+ //package com.softwareinstitute.training.scattergood.thomas;
 
-public  class DVD extends LibraryContents {
-
-    private String title;
-    private String director;
-    private int runtime;
-    private int releaseYear;
-    private boolean borrowable;
+//public  class DVD extends LibraryContents {
+    //////////////////////////Attributes////////////////////////
+   // private String director;
+    //private int runtime;
 
 
 
+    /////////////////////////Constructors///////////////////////
 
-    public DVD(String title, int runtime, String director, int releaseYear, boolean borrowable){
-        super (title);
-        this.title=title;
-        this.runtime=runtime;
-        this.director=director;
-        this.releaseYear=releaseYear;
-        this.borrowable=borrowable;
-    }
+    //public DVD(String title, int runtime, String director, int releaseYear, boolean borrowable){
+      //  super (LibraryContents);
+       // this.runtime=runtime;
+        //this.director=director;
+   // }
 
-}
+
+    ////////////////////////Methods/////////////////////////////
+
+//}

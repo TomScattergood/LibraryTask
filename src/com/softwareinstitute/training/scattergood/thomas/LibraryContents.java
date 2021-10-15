@@ -1,15 +1,23 @@
 package com.softwareinstitute.training.scattergood.thomas;
 
-public class LibraryContents extends Library{
+public class LibraryContents {
 
     //////////////////////////Attributes////////////////////////
+
     private String Title;
-    private int length;
-    private String author;
+    private String creator;
+    private boolean borrowable;
+    private int releaseYear;
+
+
 
     /////////////////////////Constructors///////////////////////
-    public LibraryContents (String name){
-        super(name);
+
+    public void Library(String Title, String creator, int releaseYear, boolean borrowable) {
+        this.Title = Title;
+        this.creator = creator;
+        this.releaseYear = releaseYear;
+        this.borrowable = borrowable;
     }
 
     ////////////////////////Methods/////////////////////////////
@@ -18,7 +26,28 @@ public class LibraryContents extends Library{
         return Title;
     }
 
-    public String getAuthor(){
-        return author;
+    public void setTitle(){
+        this.Title = Title;
     }
+
+    public String getCreator(){
+        return creator;
+    }
+
+    public void setCreator(){
+        this.creator = creator;
+    }
+
+    public void title (String title){
+        System.out.println("The title of the book is " + title );
+    }
+
+    public void creator (String creator){
+        System.out.println("The creator of the item is " + creator);
+    }
+
+    public void borrow(boolean borrowable){
+        System.out.println("This book is " + borrowable);
+    }
+
 }
